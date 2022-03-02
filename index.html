@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Rotating Animated Preloader</title>
+    <style>
+        body {
+            background-color: #333;
+            background-image: url(texture.png);
+        }
+        .ext {
+            border: 5px solid #191919;
+            width: 304px;
+            height: 304px;
+            border-radius: 100%;
+            margin: 100px auto;
+            
+        }
+        .big {
+            border: 2px solid cyan;
+            width: 300px;
+            height: 300px;
+            
+            border-radius: 100%;
+            animation: rot 10s  linear infinite;
+         }
+         .int {
+            border: 5px solid #191919;
+            width: 290px;
+            height: 290px;
+            border-radius: 100%;          
+        }
+         @keyframes rot {
+             from {
+                 transform: rotate(0deg);
+             }
+             to {
+                 transform: rotate(360deg);
+             }
+         }
+        .small {
+            width: 30px;
+            height: 30px;
+            background-color: cyan;
+            border-radius: 100%;
+            margin: -25px auto;
+            border: 5px solid #191919;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ext">  
+    <div class="big">
+        <div class="int">
+            <div class="small">
+            </div>
+        </div>
+    </div>
+</div>  
+
+</body>
+</html>
